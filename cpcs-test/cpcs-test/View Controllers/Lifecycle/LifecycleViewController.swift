@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class LifecycleViewController: ViewController {
+    
+    @IBOutlet weak var numLabel: UILabel!
+    
+}
