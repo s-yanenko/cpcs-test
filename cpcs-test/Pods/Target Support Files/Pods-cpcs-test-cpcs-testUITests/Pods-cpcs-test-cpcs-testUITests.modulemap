@@ -1,0 +1,6 @@
+framework module Pods_cpcs_test_cpcs_testUITests {
+  umbrella header "Pods-cpcs-test-cpcs-testUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
