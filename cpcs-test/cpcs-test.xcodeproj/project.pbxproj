@@ -29,6 +29,7 @@
 		4136A00E2469BA6F00D4B938 /* Lifecycle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4136A00D2469BA6F00D4B938 /* Lifecycle.storyboard */; };
 		4136A0112469BB0D00D4B938 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4136A0102469BB0D00D4B938 /* WeatherViewController.swift */; };
 		4136A0132469BB2B00D4B938 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4136A0122469BB2B00D4B938 /* Weather.storyboard */; };
+		41689BAC2472EFC9005EB6CA /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41689BAB2472EFC9005EB6CA /* UIColor+Random.swift */; };
 		446D26989A4AB09CC8C75A84 /* Pods_cpcs_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD804C9C127AD2F57AE5E33D /* Pods_cpcs_test.framework */; };
 		BC29412D4DBD758B1FACC883 /* Pods_cpcs_test_cpcs_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED28020EC056B22D0580796 /* Pods_cpcs_test_cpcs_testUITests.framework */; };
 		E9E67B4E31F8F09D3AB8ACD8 /* Pods_cpcs_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12AADD4832A5D5B6827C264 /* Pods_cpcs_testTests.framework */; };
@@ -81,6 +82,7 @@
 		4136A00D2469BA6F00D4B938 /* Lifecycle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lifecycle.storyboard; sourceTree = "<group>"; };
 		4136A0102469BB0D00D4B938 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		4136A0122469BB2B00D4B938 /* Weather.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		41689BAB2472EFC9005EB6CA /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Random.swift"; sourceTree = "<group>"; };
 		7D3A530BE426D413DE4D424A /* Pods-cpcs-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cpcs-test.debug.xcconfig"; path = "Target Support Files/Pods-cpcs-test/Pods-cpcs-test.debug.xcconfig"; sourceTree = "<group>"; };
 		920F5EDAFCA3572376BC4E30 /* Pods-cpcs-test-cpcs-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cpcs-test-cpcs-testUITests.debug.xcconfig"; path = "Target Support Files/Pods-cpcs-test-cpcs-testUITests/Pods-cpcs-test-cpcs-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AED28020EC056B22D0580796 /* Pods_cpcs_test_cpcs_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cpcs_test_cpcs_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 		41369FEF2469798500D4B938 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				41689BAA2472EFB3005EB6CA /* Extensions */,
 				41369FBF2469760400D4B938 /* AppDelegate.swift */,
 				41369FC12469760400D4B938 /* SceneDelegate.swift */,
 			);
@@ -289,6 +292,14 @@
 				4136A0102469BB0D00D4B938 /* WeatherViewController.swift */,
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		41689BAA2472EFB3005EB6CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41689BAB2472EFC9005EB6CA /* UIColor+Random.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		6312EC1189DB410901011E8B /* Frameworks */ = {
@@ -563,6 +574,7 @@
 				41306E71246DAA04002AA642 /* GalleryCollectionViewCell.swift in Sources */,
 				4136A0112469BB0D00D4B938 /* WeatherViewController.swift in Sources */,
 				4136A0072469861F00D4B938 /* GalleryViewController.swift in Sources */,
+				41689BAC2472EFC9005EB6CA /* UIColor+Random.swift in Sources */,
 				41369FC42469760400D4B938 /* ViewController.swift in Sources */,
 				41306E752472CE7D002AA642 /* GalleryViewController+Collection.swift in Sources */,
 				41369FC02469760400D4B938 /* AppDelegate.swift in Sources */,
