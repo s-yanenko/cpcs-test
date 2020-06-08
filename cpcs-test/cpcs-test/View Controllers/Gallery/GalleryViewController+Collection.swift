@@ -10,9 +10,9 @@ import UIKit
 import Nuke
 
 extension GalleryViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    // MARK: - Class functions
+    // MARK: - Static functions
     
-    class func dynamicItemSize(for collectionView: UICollectionView, sectionInsets: UIEdgeInsets, itemSpacing: CGFloat,
+    static func dynamicItemSize(for collectionView: UICollectionView, sectionInsets: UIEdgeInsets, itemSpacing: CGFloat,
                                numberOfItemsInLine: Int, aspectRatio: Double) -> CGSize {
         let sectionWidth = collectionView.bounds.width - sectionInsets.left - sectionInsets.right
         let availableWidth = sectionWidth - itemSpacing * CGFloat(numberOfItemsInLine - 1)
