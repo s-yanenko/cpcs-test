@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412C1B70248D0D1800DDCDDB /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B6F248D0D1800DDCDDB /* DataLoader.swift */; };
+		412C1B75248D10A700DDCDDB /* DIContainer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B74248D10A700DDCDDB /* DIContainer+Convenience.swift */; };
+		412C1B77248D138800DDCDDB /* DIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B76248D138800DDCDDB /* DIConfiguration.swift */; };
+		412C1B7A248E505B00DDCDDB /* JSONIntitalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B79248E505B00DDCDDB /* JSONIntitalizable.swift */; };
+		412C1B7D248E5BBC00DDCDDB /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B7C248E5BBC00DDCDDB /* WeatherInfo.swift */; };
+		412C1B80248E65AB00DDCDDB /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412C1B7F248E65AB00DDCDDB /* WeatherDataManager.swift */; };
 		41306E71246DAA04002AA642 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41306E70246DAA04002AA642 /* GalleryCollectionViewCell.swift */; };
 		41306E732472AD33002AA642 /* gallery in Resources */ = {isa = PBXBuildFile; fileRef = 41306E722472AD33002AA642 /* gallery */; };
 		41306E752472CE7D002AA642 /* GalleryViewController+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41306E742472CE7D002AA642 /* GalleryViewController+Collection.swift */; };
@@ -54,6 +60,12 @@
 
 /* Begin PBXFileReference section */
 		1BE81FD154FAAA0223D0F0DC /* Pods-cpcs-test-cpcs-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cpcs-test-cpcs-testUITests.release.xcconfig"; path = "Target Support Files/Pods-cpcs-test-cpcs-testUITests/Pods-cpcs-test-cpcs-testUITests.release.xcconfig"; sourceTree = "<group>"; };
+		412C1B6F248D0D1800DDCDDB /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		412C1B74248D10A700DDCDDB /* DIContainer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DIContainer+Convenience.swift"; sourceTree = "<group>"; };
+		412C1B76248D138800DDCDDB /* DIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIConfiguration.swift; sourceTree = "<group>"; };
+		412C1B79248E505B00DDCDDB /* JSONIntitalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONIntitalizable.swift; sourceTree = "<group>"; };
+		412C1B7C248E5BBC00DDCDDB /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		412C1B7F248E65AB00DDCDDB /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
 		41306E70246DAA04002AA642 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		41306E722472AD33002AA642 /* gallery */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gallery; sourceTree = "<group>"; };
 		41306E742472CE7D002AA642 /* GalleryViewController+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+Collection.swift"; sourceTree = "<group>"; };
@@ -121,6 +133,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412C1B71248D0F0600DDCDDB /* Data Loading */ = {
+			isa = PBXGroup;
+			children = (
+				412C1B6F248D0D1800DDCDDB /* DataLoader.swift */,
+			);
+			path = "Data Loading";
+			sourceTree = "<group>";
+		};
+		412C1B73248D0F2000DDCDDB /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				412C1B76248D138800DDCDDB /* DIConfiguration.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		412C1B78248E504400DDCDDB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				412C1B79248E505B00DDCDDB /* JSONIntitalizable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		412C1B7B248E5BA800DDCDDB /* BO */ = {
+			isa = PBXGroup;
+			children = (
+				412C1B7C248E5BBC00DDCDDB /* WeatherInfo.swift */,
+			);
+			path = BO;
+			sourceTree = "<group>";
+		};
+		412C1B7E248E658D00DDCDDB /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+				412C1B7F248E65AB00DDCDDB /* WeatherDataManager.swift */,
+			);
+			path = "Data Managers";
+			sourceTree = "<group>";
+		};
 		41306E6F246DA9EC002AA642 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +238,8 @@
 		41369FEF2469798500D4B938 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				412C1B78248E504400DDCDDB /* Protocols */,
+				412C1B73248D0F2000DDCDDB /* DI */,
 				41689BAA2472EFB3005EB6CA /* Extensions */,
 				41369FBF2469760400D4B938 /* AppDelegate.swift */,
 				41369FC12469760400D4B938 /* SceneDelegate.swift */,
@@ -227,6 +281,9 @@
 		41369FF324697A1A00D4B938 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				412C1B7E248E658D00DDCDDB /* Data Managers */,
+				412C1B7B248E5BA800DDCDDB /* BO */,
+				412C1B71248D0F0600DDCDDB /* Data Loading */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				41689BAB2472EFC9005EB6CA /* UIColor+Random.swift */,
+				412C1B74248D10A700DDCDDB /* DIContainer+Convenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -576,9 +634,15 @@
 				4136A0072469861F00D4B938 /* GalleryViewController.swift in Sources */,
 				41689BAC2472EFC9005EB6CA /* UIColor+Random.swift in Sources */,
 				41369FC42469760400D4B938 /* ViewController.swift in Sources */,
+				412C1B80248E65AB00DDCDDB /* WeatherDataManager.swift in Sources */,
 				41306E752472CE7D002AA642 /* GalleryViewController+Collection.swift in Sources */,
+				412C1B7D248E5BBC00DDCDDB /* WeatherInfo.swift in Sources */,
+				412C1B77248D138800DDCDDB /* DIConfiguration.swift in Sources */,
+				412C1B7A248E505B00DDCDDB /* JSONIntitalizable.swift in Sources */,
 				41369FC02469760400D4B938 /* AppDelegate.swift in Sources */,
 				41369FF724697A6100D4B938 /* RootViewController.swift in Sources */,
+				412C1B70248D0D1800DDCDDB /* DataLoader.swift in Sources */,
+				412C1B75248D10A700DDCDDB /* DIContainer+Convenience.swift in Sources */,
 				41369FC22469760400D4B938 /* SceneDelegate.swift in Sources */,
 				4136A0042469833400D4B938 /* TheoryViewController.swift in Sources */,
 				4136A00C2469BA5300D4B938 /* LifecycleViewController.swift in Sources */,

@@ -1,16 +1,28 @@
 PODS:
+  - Alamofire (5.2.1)
   - Nuke (8.4.1)
+  - SwiftyJSON (5.0.0)
+  - Swinject (2.7.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - Nuke
+  - SwiftyJSON
+  - Swinject
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Nuke
+    - SwiftyJSON
+    - Swinject
 
 SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
 
-PODFILE CHECKSUM: a0500d4b8f7d1925d5bb9a814561c0af139cbade
+PODFILE CHECKSUM: f9871e783294d3647500bdbc7daac906c034f81a
 
 COCOAPODS: 1.8.4
