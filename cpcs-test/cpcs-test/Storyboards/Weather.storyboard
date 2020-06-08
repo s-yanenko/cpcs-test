@@ -15,22 +15,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-45-Jgu">
-                                <rect key="frame" x="164" y="437.5" width="86" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-45-Jgu">
+                                <rect key="frame" x="207" y="348" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08U-72-ePB">
+                                <rect key="frame" x="207" y="388" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYd-3S-a6k">
+                                <rect key="frame" x="207" y="713" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="yYd-3S-a6k" firstAttribute="centerX" secondItem="LEY-WO-nNt" secondAttribute="centerX" id="6KV-fg-RT8"/>
+                            <constraint firstItem="08U-72-ePB" firstAttribute="centerX" secondItem="LEY-WO-nNt" secondAttribute="centerX" id="XJh-5i-87a"/>
+                            <constraint firstItem="08U-72-ePB" firstAttribute="top" secondItem="T1m-45-Jgu" secondAttribute="bottom" constant="40" id="fmw-fK-Ufq"/>
+                            <constraint firstItem="UbD-RT-KsW" firstAttribute="bottom" secondItem="yYd-3S-a6k" secondAttribute="bottom" constant="100" id="for-bq-RKm"/>
                             <constraint firstItem="T1m-45-Jgu" firstAttribute="centerX" secondItem="LEY-WO-nNt" secondAttribute="centerX" id="i9K-of-TmQ"/>
-                            <constraint firstItem="T1m-45-Jgu" firstAttribute="centerY" secondItem="LEY-WO-nNt" secondAttribute="centerY" id="jEd-nO-o46"/>
+                            <constraint firstItem="T1m-45-Jgu" firstAttribute="centerY" secondItem="LEY-WO-nNt" secondAttribute="centerY" constant="-100" id="jEd-nO-o46"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UbD-RT-KsW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weather" id="Beo-Ok-vzi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="yYd-3S-a6k" id="5ux-h7-2Ta"/>
+                        <outlet property="descriptionLabel" destination="08U-72-ePB" id="HbA-pb-JdY"/>
+                        <outlet property="temperatureLabel" destination="T1m-45-Jgu" id="5a9-FI-pRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLM-Ec-hST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,2 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-cpcs-test/Pods-cpcs-test-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework
